@@ -37,7 +37,7 @@ Groovy:
 ```groovy
     implementation 'com.github.atick-faisal:compose-material-color:1.0.0'
 ```
-Kotlin
+Kotlin:
 ```kotlin
     implementation("com.github.atick-faisal:compose-material-color:1.0.0")
 ```
