@@ -49,7 +49,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.atick-faisal"
                 artifactId = "compose-material-color"
-                version = "1.0.0"
+                version = "1.0.1"
 
                 from(components["release"])
             }
