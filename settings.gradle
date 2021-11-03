@@ -7,5 +7,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Material Color"
-include ':app'
 include ':material-color'
