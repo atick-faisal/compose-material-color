@@ -35,15 +35,19 @@ Kotlin:
 ### Step 2:  Add the dependency
 Groovy:
 ```groovy
-    implementation 'com.github.atick-faisal:compose-material-color:1.0.1'
+    implementation 'com.github.atick-faisal:compose-material-color:1.0.2'
 ```
 Kotlin:
 ```kotlin
-    implementation("com.github.atick-faisal:compose-material-color:1.0.1")
+    implementation("com.github.atick-faisal:compose-material-color:1.0.2")
 ```
 
 ### Step 3: Enjoy using Material Colors with Compose
 ```kotlin
+    import ai.atick.material.MaterialColor
+    
+    ...
+    
     Text(
         text = "Hello Compose!",
         color = MaterialColor.Purple700
