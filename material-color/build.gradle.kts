@@ -1,4 +1,5 @@
-val composeVersion = "1.0.4"
+val libraryVersion = "1.0.3"
+val composeVersion = "1.0.5"
 
 plugins {
     id("com.android.library")
@@ -49,8 +50,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.atick-faisal"
                 artifactId = "compose-material-color"
-                version = "1.0.2"
-
+                version = libraryVersion
                 from(components["release"])
             }
         }
