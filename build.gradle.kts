@@ -1,6 +1,6 @@
 buildscript {
     val gradleVersion by extra { "7.0.3" }
-    val kotlinVersion by extra { "1.5.31" }
+    val kotlinVersion by extra { "1.6.10" }
 
     repositories {
         google()
