@@ -1,5 +1,6 @@
-val libraryVersion = "2.1.0"
-val composeVersion = "1.1.1"
+val libraryVersion = "3.0.0"
+val composeVersion = "1.2.1"
+val composeCompilerVersion = "1.3.0"
 
 plugins {
     id("com.android.library")
@@ -25,18 +26,29 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
-        kotlinCompilerExtensionVersion = composeVersion
+        kotlinCompilerExtensionVersion = composeCompilerVersion
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
     }
 }
 
