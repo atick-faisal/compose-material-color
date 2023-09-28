@@ -15,7 +15,7 @@
  */
 
 val libraryVersion = "4.0.1"
-val composeVersion = "1.5.1"
+val composeVersion = "1.5.2"
 val composeCompilerVersion = "1.5.3"
 
 plugins {
