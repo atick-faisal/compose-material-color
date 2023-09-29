@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-val libraryVersion = "4.0.1"
+val libraryVersion = "4.1.1"
 val composeVersion = "1.5.2"
 val composeCompilerVersion = "1.5.3"
 
@@ -25,7 +25,7 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
