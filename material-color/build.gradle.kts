@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-val libraryVersion = "4.1.1"
+val libraryVersion = "5.0.0"
 val composeVersion = "1.5.4"
 val composeCompilerVersion = "1.5.4"
 
