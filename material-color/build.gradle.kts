@@ -15,8 +15,8 @@
  */
 
 val libraryVersion = "5.0.0"
-val composeVersion = "1.6.1"
-val composeCompilerVersion = "1.5.9"
+val composeVersion = "1.6.2"
+val composeCompilerVersion = "1.5.10"
 
 plugins {
     id("com.android.library")
