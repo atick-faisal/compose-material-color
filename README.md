@@ -35,11 +35,11 @@ Kotlin:
 ### Step 2:  Add the dependency
 Groovy:
 ```groovy
-    implementation 'com.github.atick-faisal:compose-material-color:5.0.0'
+    implementation 'com.github.atick-faisal:compose-material-color:5.1.1'
 ```
 Kotlin:
 ```kotlin
-    implementation("com.github.atick-faisal:compose-material-color:5.0.0")
+    implementation("com.github.atick-faisal:compose-material-color:5.1.1")
 ```
 
 ### Step 3: Enjoy using Material Colors with Compose
