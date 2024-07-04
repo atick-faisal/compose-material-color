@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-val libraryVersion = "5.0.0"
+val libraryVersion = "5.1.0"
 val composeVersion = "1.6.8"
 val composeCompilerVersion = "1.5.14"
 
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("org.jetbrains.kotlin.plugin.compose")
     id("maven-publish")
 }
 
@@ -32,7 +33,6 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
 
-    @Suppress("UnstableApiUsage")
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -52,13 +52,8 @@ android {
         jvmTarget = "17"
     }
 
-    @Suppress("UnstableApiUsage")
     buildFeatures {
         compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = composeCompilerVersion
     }
 
     publishing {
