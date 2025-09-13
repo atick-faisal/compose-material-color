@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 /*
  * Copyright 2023 Atick Faisal
  *
@@ -15,8 +17,7 @@
  */
 
 val libraryVersion = "5.1.0"
-val composeVersion = "1.9.1"
-val composeCompilerVersion = "1.5.14"
+val composeBomVersion = "2025.09.00"
 
 plugins {
     id("com.android.library")
@@ -26,7 +27,7 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 21
@@ -37,19 +38,21 @@ android {
         release {
             isMinifyEnabled = true
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_21
+        }
     }
 
     buildFeatures {
@@ -67,7 +70,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.compose.ui:ui:$composeVersion")
+    implementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
+    implementation("androidx.compose.ui:ui")
 }
 
 afterEvaluate {
