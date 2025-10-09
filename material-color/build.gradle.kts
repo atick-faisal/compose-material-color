@@ -32,7 +32,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
  */
 
 val libraryVersion = "6.0.0"
-val composeBomVersion = "2025.09.01"
+val composeBomVersion = "2025.10.00"
 
 plugins {
     id("com.android.library")
