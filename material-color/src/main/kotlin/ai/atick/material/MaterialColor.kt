@@ -21,7 +21,6 @@ import androidx.compose.ui.graphics.Color
 
 @Suppress("UNUSED")
 object MaterialColor {
-
     // ... Red
     @Stable
     val Red50 = Color(0xFF_FFEBEE)
