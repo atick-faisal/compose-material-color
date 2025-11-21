@@ -31,7 +31,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
  * limitations under the License.
  */
 
-val libraryVersion = "6.0.0"
+val libraryVersion = "7.0.0"
 val composeBomVersion = "2025.11.01"
 
 plugins {
