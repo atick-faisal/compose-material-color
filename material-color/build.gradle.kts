@@ -36,7 +36,6 @@ val composeBomVersion = "2026.01.00"
 
 plugins {
     id("com.android.library")
-    id("kotlin-android")
     id("org.jetbrains.kotlin.plugin.compose")
     id("maven-publish")
 }
